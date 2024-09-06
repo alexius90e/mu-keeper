@@ -1,0 +1,20 @@
+.header {
+  padding: 24px 0 18px;
+
+  &__logo {
+    width: fit-content;
+    user-select: none;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
