@@ -1,2 +1,110 @@
 .main {
+  position: relative;
+  margin-bottom: 166px;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    width: 145px;
+    background: url(../assets/main-shadow-min.webp) top left repeat-y;
+    filter: blur(3px);
+  }
+
+  &::before {
+    left: -145px;
+  }
+
+  &::after {
+    right: -145px;
+    transform: scale(-1, 1);
+  }
+
+  &__top,
+  &__bottom {
+    position: absolute;
+    z-index: 10;
+    display: block;
+    height: 106px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(../assets/main-border-min.webp) center / 1298px no-repeat;
+  }
+
+  &__top {
+    top: -10px;
+  }
+
+  &__bottom {
+    bottom: -10px;
+    transform: scale(1, -1);
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: stretch;
+    gap: 70px;
+    min-height: 1500px;
+    height: 100%;
+    padding: 0 70px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      bottom: 0;
+      display: block;
+      width: 70px;
+      box-sizing: border-box;
+      background: url(../assets/divider-min.webp) top center repeat-y;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+      transform: scale(-1, 1);
+    }
+  }
+
+  &__content {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 55px 0 96px;
+    background: url(../assets/main-content-bg-min.webp) top center / cover no-repeat;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: -70px;
+      bottom: 0;
+      display: block;
+      width: 70px;
+      box-sizing: border-box;
+      background: url(../assets/divider-min.webp) top center repeat-y;
+    }
+  }
+
+  &__sidebar {
+    flex: 0 0 330px;
+    padding: 80px 0 96px;
+    background: url(../assets/sidebar-bg-min.webp) center repeat-y;
+    background-color: #c3a684;
+  }
 }
