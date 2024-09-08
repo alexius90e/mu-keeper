@@ -86,7 +86,7 @@
     position: relative;
     flex: 1 1 auto;
     padding: 55px 0 96px;
-    background: url(../assets/main-content-bg-min.webp) top center / cover no-repeat;
+    background: url(../assets/main-content-bg-min.webp) top center repeat-y;
 
     &::after {
       content: '';
@@ -106,7 +106,7 @@
     flex: 0 0 330px;
     padding: 80px 30px 96px;
     box-sizing: border-box;
-    background: url(../assets/sidebar-bg-min.webp) center repeat-y;
+    background: url(../assets/sidebar-bg-min.webp) top center repeat-y;
     background-color: #c3a684;
   }
 }
