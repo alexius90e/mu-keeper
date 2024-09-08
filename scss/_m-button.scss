@@ -1,0 +1,25 @@
+.button {
+  display: block;
+  max-width: 195px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 14px 16px 17px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #dfd2bb;
+  outline: none;
+  border: none;
+  background: url(../assets/button-bg-min.webp) center no-repeat;
+  transition: background-image ease-in-out 0.1s;
+  cursor: pointer;
+
+  &:hover {
+    background-image: url(../assets/button-bg-hover-min.webp);
+  }
+
+  &:active {
+    background-image: url(../assets/button-bg-active-min.webp);
+  }
+}

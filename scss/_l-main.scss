@@ -29,14 +29,16 @@
   &__top,
   &__bottom {
     position: absolute;
+    left: -5px;
+    right: -5px;
     z-index: 10;
     display: block;
     height: 106px;
-    width: 100%;
+    width: 1290px;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    background: url(../assets/main-border-min.webp) center / 1298px no-repeat;
+    background: url(../assets/main-border-min.webp) center / 1290px no-repeat;
   }
 
   &__top {
@@ -54,7 +56,6 @@
     display: flex;
     align-items: stretch;
     gap: 70px;
-    min-height: 1500px;
     height: 100%;
     padding: 0 70px;
 
@@ -103,7 +104,8 @@
 
   &__sidebar {
     flex: 0 0 330px;
-    padding: 80px 0 96px;
+    padding: 80px 30px 96px;
+    box-sizing: border-box;
     background: url(../assets/sidebar-bg-min.webp) center repeat-y;
     background-color: #c3a684;
   }

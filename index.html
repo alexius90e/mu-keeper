@@ -25,7 +25,455 @@
 
       <div class="main__wrapper">
         <section class="main__content"></section>
-        <aside class="main__sidebar"></aside>
+
+        <aside class="main__sidebar">
+          <div class="sidebar">
+            <div class="sidebar__login">
+              <h3 class="sidebar__title">Личный кабинет</h3>
+
+              <form class="sidebar__login-form">
+                <fieldset class="sidebar__login-form-fieldset">
+                  <div class="sidebar__login-form-wrapper">
+                    <input
+                      class="sidebar__login-form-input"
+                      type="text"
+                      name="loginName"
+                      id="loginName"
+                      placeholder="Логин:"
+                    />
+                  </div>
+                </fieldset>
+
+                <fieldset class="sidebar__login-form-fieldset">
+                  <div class="sidebar__login-form-wrapper">
+                    <input
+                      class="sidebar__login-form-input"
+                      type="text"
+                      name="loginPassword"
+                      id="loginPassword"
+                      placeholder="Пароль:"
+                    />
+                  </div>
+                </fieldset>
+
+                <fieldset class="sidebar__login-form-fieldset">
+                  <label class="sidebar__login-form-label" for="loginAnswer">
+                    <span>Решите пример : </span><b>2 + 3 =</b>
+                  </label>
+
+                  <div class="sidebar__login-form-wrapper">
+                    <input
+                      class="sidebar__login-form-input"
+                      type="text"
+                      name="loginAnswer"
+                      id="loginAnswer"
+                      placeholder="Ответ:"
+                    />
+                  </div>
+                </fieldset>
+
+                <fieldset class="sidebar__login-form-controls">
+                  <button class="button">Войти</button>
+                </fieldset>
+              </form>
+            </div>
+
+            <div class="sidebar__server">
+              <h3 class="sidebar__title">Статус сервера</h3>
+
+              <div class="sidebar__server-card">
+                <div class="sidebar__server-card-toggler">
+                  <div class="sidebar__server-card-name">Мир CORE <span>х5</span></div>
+                  <div class="sidebar__server-card-players">743 чел</div>
+                  <div class="sidebar__server-card-online"><span>2</span>/10 online</div>
+                </div>
+
+                <div class="sidebar__server-card-panel">
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№1</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress full"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№2</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress medium"
+                          style="width: 60%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№3</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress low"
+                          style="width: 22%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sidebar__server-card active">
+                <div class="sidebar__server-card-toggler">
+                  <div class="sidebar__server-card-name">Мир CORE <span>х5</span></div>
+                  <div class="sidebar__server-card-players">743 чел</div>
+                  <div class="sidebar__server-card-online"><span>2</span>/10 online</div>
+                </div>
+
+                <div class="sidebar__server-card-panel">
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№1</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress full"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№2</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress medium"
+                          style="width: 60%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№3</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress low"
+                          style="width: 22%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+
+                  <div class="sidebar__server-card-panel-item disabled">
+                    <div class="sidebar__server-card-panel-item-id">№4</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress"
+                          style="width: 0%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№5</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress full"
+                          style="width: 90%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sidebar__server-card">
+                <div class="sidebar__server-card-toggler">
+                  <div class="sidebar__server-card-name">Мир CORE <span>х5</span></div>
+                  <div class="sidebar__server-card-players">743 чел</div>
+                  <div class="sidebar__server-card-online"><span>2</span>/10 online</div>
+                </div>
+
+                <div class="sidebar__server-card-panel">
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№1</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress full"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№2</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress medium"
+                          style="width: 60%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№3</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress low"
+                          style="width: 22%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sidebar__server-card">
+                <div class="sidebar__server-card-toggler">
+                  <div class="sidebar__server-card-name">Мир CORE <span>х5</span></div>
+                  <div class="sidebar__server-card-players">743 чел</div>
+                  <div class="sidebar__server-card-online"><span>2</span>/10 online</div>
+                </div>
+
+                <div class="sidebar__server-card-panel">
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№1</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress full"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№2</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress medium"
+                          style="width: 60%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№3</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress low"
+                          style="width: 22%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sidebar__server-card">
+                <div class="sidebar__server-card-toggler">
+                  <div class="sidebar__server-card-name">Мир CORE <span>х5</span></div>
+                  <div class="sidebar__server-card-players">743 чел</div>
+                  <div class="sidebar__server-card-online"><span>2</span>/10 online</div>
+                </div>
+
+                <div class="sidebar__server-card-panel">
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№1</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress full"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№2</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress medium"
+                          style="width: 60%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+
+                  <div class="sidebar__server-card-panel-item">
+                    <div class="sidebar__server-card-panel-item-id">№3</div>
+                    <div class="sidebar__server-card-panel-item-indicator">
+                      <div class="sidebar__server-card-panel-item-indicator-wrapper">
+                        <div
+                          class="sidebar__server-card-panel-item-indicator-progress low"
+                          style="width: 22%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="sidebar__server-card-panel-item-players">743 чел</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar__market">
+              <h3 class="sidebar__title">Рынок</h3>
+
+              <div class="sidebar__market-item">
+                <div class="sidebar__market-item-content">Seed Sphere (Water) +4</div>
+              </div>
+
+              <div class="sidebar__market-item">
+                <div class="sidebar__market-item-content">Agnis Adamantine Pants +13</div>
+              </div>
+
+              <div class="sidebar__market-item">
+                <div class="sidebar__market-item-content">Seed Sphere (Water) +4</div>
+              </div>
+
+              <div class="sidebar__market-item">
+                <div class="sidebar__market-item-content">Seed Sphere (Water) +4</div>
+              </div>
+
+              <div class="sidebar__market-controls">
+                <button class="button">Войти на рынок</button>
+              </div>
+            </div>
+
+            <div class="sidebar__leaders">
+              <h3 class="sidebar__title">ТОП-5 игроков</h3>
+
+              <table class="sidebar__leaders-table" cellspacing="0" cellpadding="0">
+                <thead>
+                  <tr>
+                    <th>Имя</th>
+                    <th>Сбрасываний</th>
+                    <th>Уровень</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Wwwwwwww</td>
+                    <td>1000</td>
+                    <td>400</td>
+                  </tr>
+
+                  <tr>
+                    <td>Wwwwwwww</td>
+                    <td>3</td>
+                    <td>400</td>
+                  </tr>
+
+                  <tr>
+                    <td>Wwwwwwww</td>
+                    <td>999</td>
+                    <td>400</td>
+                  </tr>
+
+                  <tr>
+                    <td>Wwwwwwww</td>
+                    <td>590</td>
+                    <td>302</td>
+                  </tr>
+
+                  <tr>
+                    <td>Wwwwwwww</td>
+                    <td>933</td>
+                    <td>777</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="sidebar__events">
+              <h3 class="sidebar__title">Ивенты</h3>
+
+              <ul class="sidebar__events-list">
+                <li class="sidebar__events-list-item">
+                  <div class="sidebar__events-list-item-top">
+                    <span class="sidebar__events-list-item-name">Blood Castle</span>
+                    <span class="sidebar__events-list-item-time">20:30</span>
+                  </div>
+                  <div class="sidebar__events-list-item-bottom">
+                    <span class="sidebar__events-list-item-label">Начнётся через</span>
+                    <span class="sidebar__events-list-item-delta">00:28:12</span>
+                  </div>
+                </li>
+
+                <li class="sidebar__events-list-item">
+                  <div class="sidebar__events-list-item-top">
+                    <span class="sidebar__events-list-item-name">Blood Castle</span>
+                    <span class="sidebar__events-list-item-time">20:30</span>
+                  </div>
+                  <div class="sidebar__events-list-item-bottom">
+                    <span class="sidebar__events-list-item-label">Начнётся через</span>
+                    <span class="sidebar__events-list-item-delta">00:28:12</span>
+                  </div>
+                </li>
+
+                <li class="sidebar__events-list-item">
+                  <div class="sidebar__events-list-item-top">
+                    <span class="sidebar__events-list-item-name">Blood Castle</span>
+                    <span class="sidebar__events-list-item-time">20:30</span>
+                  </div>
+                  <div class="sidebar__events-list-item-bottom">
+                    <span class="sidebar__events-list-item-label">Начнётся через</span>
+                    <span class="sidebar__events-list-item-delta">00:28:12</span>
+                  </div>
+                </li>
+
+                <li class="sidebar__events-list-item">
+                  <div class="sidebar__events-list-item-top">
+                    <span class="sidebar__events-list-item-name">Blood Castle</span>
+                    <span class="sidebar__events-list-item-time">20:30</span>
+                  </div>
+                  <div class="sidebar__events-list-item-bottom">
+                    <span class="sidebar__events-list-item-label">Начнётся через</span>
+                    <span class="sidebar__events-list-item-delta">00:28:12</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
       </div>
 
       <div class="main__bottom"></div>
