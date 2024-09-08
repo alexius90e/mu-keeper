@@ -19,3 +19,11 @@ sidebarAccordeonElems.forEach((accordeon) => {
     }
   });
 });
+
+const mainEventSwiper = new Swiper('.main-event .swiper', {
+  slidesPerView: 'auto',
+  navigation: {
+    nextEl: '.main-event__controls-prev',
+    prevEl: '.main-event__controls-next',
+  },
+});

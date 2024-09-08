@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MU Keeper</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script type="module" src="./js/index.js" defer></script>
   </head>
 
@@ -24,7 +26,80 @@
       <div class="main__top"></div>
 
       <div class="main__wrapper">
-        <section class="main__content"></section>
+        <section class="main__content">
+          <div class="main-event">
+            <div class="main-event__content">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="main-event__slide">
+                      <figure class="main-event__slide-figure">
+                        <img
+                          class="main-event__slide-figure-image"
+                          src="./assets/main-event-min.webp"
+                          alt="event"
+                        />
+                      </figure>
+
+                      <div class="main-event__slide-title">EVENT</div>
+                      <div class="main-event__slide-name">DEVIL SQUARE</div>
+
+                      <div class="main-event__slide-start">
+                        <span class="main-event__slide-start-text">EVENT START </span>
+                        <span class="main-event__slide-start-counter">00:00:00:41</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="main-event__slide">
+                      <figure class="main-event__slide-figure">
+                        <img
+                          class="main-event__slide-figure-image"
+                          src="./assets/main-event-min.webp"
+                          alt="event"
+                        />
+                      </figure>
+
+                      <div class="main-event__slide-title">EVENT</div>
+                      <div class="main-event__slide-name">DEVIL SQUARE</div>
+
+                      <div class="main-event__slide-start">
+                        <span class="main-event__slide-start-text">EVENT START </span>
+                        <span class="main-event__slide-start-counter">00:00:00:41</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="main-event__slide">
+                      <figure class="main-event__slide-figure">
+                        <img
+                          class="main-event__slide-figure-image"
+                          src="./assets/main-event-min.webp"
+                          alt="event"
+                        />
+                      </figure>
+
+                      <div class="main-event__slide-title">EVENT</div>
+                      <div class="main-event__slide-name">DEVIL SQUARE</div>
+
+                      <div class="main-event__slide-start">
+                        <span class="main-event__slide-start-text">EVENT START </span>
+                        <span class="main-event__slide-start-counter">00:00:00:41</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-event__controls">
+              <div class="main-event__controls-prev" role="button"></div>
+              <div class="main-event__controls-next" role="button"></div>
+            </div>
+          </div>
+        </section>
 
         <aside class="main__sidebar">
           <div class="sidebar">
@@ -195,7 +270,7 @@
                     <div class="sidebar__server-card-panel-item-indicator">
                       <div class="sidebar__server-card-panel-item-indicator-wrapper">
                         <div
-                          class="sidebar__server-card-panel-item-indicator-progress full"
+                          class="sidebar__server-card-panel-item-indicator-progress high"
                           style="width: 90%"
                         ></div>
                       </div>
