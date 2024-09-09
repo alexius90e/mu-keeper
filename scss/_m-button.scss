@@ -11,15 +11,15 @@
   color: #dfd2bb;
   outline: none;
   border: none;
-  background: url(../assets/button-bg-min.webp) center no-repeat;
+  background: url(../assets/button-bg-min.png) center no-repeat;
   transition: background-image ease-in-out 0.1s;
   cursor: pointer;
 
   &:hover {
-    background-image: url(../assets/button-bg-hover-min.webp);
+    background-image: url(../assets/button-bg-hover-min.png);
   }
 
   &:active {
-    background-image: url(../assets/button-bg-active-min.webp);
+    background-image: url(../assets/button-bg-active-min.png);
   }
 }
