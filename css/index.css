@@ -94,7 +94,7 @@ img {
   width: 100%;
   box-sizing: border-box;
   border: none;
-  background: url(../assets/sidebar-item-bg-min.webp) top center repeat;
+  background: url(../assets/sidebar-item-bg-min.jpg) top center repeat;
 }
 .custom-select > select {
   display: none;
@@ -154,7 +154,7 @@ img {
   font-weight: 400;
   font-size: 13px;
   color: #fff;
-  background: url(../assets/sidebar-item-bg-min.webp) top center repeat;
+  background: url(../assets/sidebar-item-bg-min.jpg) top center repeat;
   box-shadow: 0 0 20px rgba(13, 13, 16, 0.25);
 }
 .custom-select__items::-webkit-scrollbar {
@@ -183,7 +183,7 @@ img {
      -moz-user-select: none;
           user-select: none;
   cursor: pointer;
-  background: url(../assets/custom-select-divider-min.webp) bottom center repeat-x;
+  background: url(../assets/custom-select-divider-min.png) bottom center repeat-x;
 }
 .custom-select__item:last-child {
   background: none;
@@ -614,7 +614,6 @@ img {
   padding-bottom: 58px;
   background: url(../assets/main-event-bg-min.png) bottom center no-repeat;
   background-size: 740px;
-  display: none;
 }
 .main-event__content {
   min-width: 0;
@@ -642,7 +641,7 @@ img {
   display: inline-block;
   width: 31px;
   height: 31px;
-  background: url(../assets/button-next-min.webp) center no-repeat;
+  background: url(../assets/button-next-min.png) center no-repeat;
   background-size: cover;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -650,10 +649,10 @@ img {
   cursor: pointer;
 }
 .main-event__controls-prev:hover, .main-event__controls-next:hover {
-  background-image: url(../assets/button-next-hover-min.webp);
+  background-image: url(../assets/button-next-hover-min.png);
 }
 .main-event__controls-prev.swiper-button-disabled, .main-event__controls-next.swiper-button-disabled {
-  background-image: url(../assets/button-next-disabled-min.webp);
+  background-image: url(../assets/button-next-disabled-min.png);
 }
 .main-event__controls-prev {
   transform: rotate(180deg);
@@ -777,7 +776,6 @@ img {
   margin: 0 0 20px;
   padding: 7px 11px 11px;
   box-sizing: border-box;
-  display: none;
 }
 .news__item-video::before {
   content: "";
@@ -787,7 +785,7 @@ img {
   right: 0;
   bottom: 0;
   z-index: 5;
-  background: url(../assets/video-border-min.webp) top center no-repeat;
+  background: url(../assets/video-border-min.png) top center no-repeat;
   background-size: 620px;
   pointer-events: none;
 }
@@ -842,7 +840,6 @@ img {
 
 .screenshots {
   margin: 0 0 30px;
-  display: none;
 }
 .screenshots__content {
   position: relative;
@@ -854,7 +851,7 @@ img {
   display: inline-block;
   width: 31px;
   height: 31px;
-  background: url(../assets/button-next-min.webp) center no-repeat;
+  background: url(../assets/button-next-min.png) center no-repeat;
   background-size: cover;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -862,10 +859,10 @@ img {
   cursor: pointer;
 }
 .screenshots__controls-prev:hover, .screenshots__controls-next:hover {
-  background-image: url(../assets/button-next-hover-min.webp);
+  background-image: url(../assets/button-next-hover-min.png);
 }
 .screenshots__controls-prev.swiper-button-disabled, .screenshots__controls-next.swiper-button-disabled {
-  background-image: url(../assets/button-next-disabled-min.webp);
+  background-image: url(../assets/button-next-disabled-min.png);
 }
 .screenshots__controls-prev {
   left: 30px;
@@ -901,7 +898,7 @@ img {
   right: 0;
   bottom: 0;
   z-index: 1;
-  background: url(../assets/gallery-border-min.webp) center no-repeat;
+  background: url(../assets/gallery-border-min.png) center no-repeat;
   pointer-events: none;
 }
 .screenshots__slide-image {

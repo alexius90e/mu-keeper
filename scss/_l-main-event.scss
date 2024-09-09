@@ -4,7 +4,6 @@
   padding-bottom: 58px;
   background: url(../assets/main-event-bg-min.png) bottom center no-repeat;
   background-size: 740px;
-  display: none;
 
   &__content {
 
@@ -38,17 +37,17 @@
       display: inline-block;
       width: 31px;
       height: 31px;
-      background: url(../assets/button-next-min.webp) center no-repeat;
+      background: url(../assets/button-next-min.png) center no-repeat;
       background-size: cover;
       user-select: none;
       cursor: pointer;
 
       &:hover {
-        background-image: url(../assets/button-next-hover-min.webp);
+        background-image: url(../assets/button-next-hover-min.png);
       }
 
       &.swiper-button-disabled {
-        background-image: url(../assets/button-next-disabled-min.webp);
+        background-image: url(../assets/button-next-disabled-min.png);
       }
     }
 

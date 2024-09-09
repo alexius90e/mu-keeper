@@ -1,6 +1,5 @@
 .screenshots {
   margin: 0 0 30px;
-  display: none;
 
   &__content {
     position: relative;
@@ -15,17 +14,17 @@
       display: inline-block;
       width: 31px;
       height: 31px;
-      background: url(../assets/button-next-min.webp) center no-repeat;
+      background: url(../assets/button-next-min.png) center no-repeat;
       background-size: cover;
       user-select: none;
       cursor: pointer;
 
       &:hover {
-        background-image: url(../assets/button-next-hover-min.webp);
+        background-image: url(../assets/button-next-hover-min.png);
       }
 
       &.swiper-button-disabled {
-        background-image: url(../assets/button-next-disabled-min.webp);
+        background-image: url(../assets/button-next-disabled-min.png);
       }
     }
 
@@ -69,7 +68,7 @@
       right: 0;
       bottom: 0;
       z-index: 1;
-      background: url(../assets/gallery-border-min.webp) center no-repeat;
+      background: url(../assets/gallery-border-min.png) center no-repeat;
       pointer-events: none;
     }
 

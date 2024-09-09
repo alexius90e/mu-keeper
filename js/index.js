@@ -1,7 +1,9 @@
+import './custom-select.js';
+
 const sidebarAccordeonElems = document.querySelectorAll('.sidebar__server-card');
 
 sidebarAccordeonElems.forEach((accordeon) => {
-  var panel = accordeon.querySelector('.sidebar__server-card-panel');
+  const panel = accordeon.querySelector('.sidebar__server-card-panel');
 
   if (panel && accordeon.classList.contains('active')) {
     panel.style.maxHeight = panel.scrollHeight + 'px';
@@ -34,6 +36,22 @@ const screenshotsSwiper = new Swiper('.screenshots .swiper', {
   navigation: {
     nextEl: '.screenshots__controls-next',
     prevEl: '.screenshots__controls-prev',
+  },
+});
+
+Fancybox.bind('[data-fancybox="screenshots"]', {
+  Toolbar: {
+    display: {
+      left: [],
+      middle: [],
+      right: [],
+    },
+  },
+  Thumbs: {
+    showOnStart: false,
+  },
+  Carousel: {
+    showOnStart: false,
   },
 });
 
