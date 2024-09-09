@@ -387,6 +387,25 @@ img {
   color: #2a1719;
   background: url(../assets/swords.svg) left top 1px no-repeat;
 }
+.sidebar__server-info {
+  margin: 10px 0 0;
+  padding: 24px 0 0;
+  background: url(../assets/server-divider-min.webp) top center no-repeat;
+}
+.sidebar__server-info-item {
+  margin: 0 0 4px;
+  text-align: center;
+}
+.sidebar__server-info-item-text {
+  font-weight: 700;
+  font-size: 16px;
+  color: #211614;
+}
+.sidebar__server-info-item-value {
+  font-weight: 700;
+  font-size: 22px;
+  color: #920404;
+}
 .sidebar__market-item {
   padding: 2px;
   margin: 0 0 10px;

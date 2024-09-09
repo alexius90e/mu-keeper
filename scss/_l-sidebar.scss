@@ -216,6 +216,29 @@
         }
       }
     }
+
+    &-info {
+      margin: 10px 0 0;
+      padding: 24px 0 0;
+      background: url(../assets/server-divider-min.webp) top center no-repeat;
+
+      &-item {
+        margin: 0 0 4px;
+        text-align: center;
+
+        &-text {
+          font-weight: 700;
+          font-size: 16px;
+          color: #211614;
+        }
+
+        &-value {
+          font-weight: 700;
+          font-size: 22px;
+          color: #920404;
+        }
+      }
+    }
   }
 
   &__market {
