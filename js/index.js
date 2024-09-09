@@ -39,22 +39,6 @@ const screenshotsSwiper = new Swiper('.screenshots .swiper', {
   },
 });
 
-Fancybox.bind('[data-fancybox="screenshots"]', {
-  Toolbar: {
-    display: {
-      left: [],
-      middle: [],
-      right: [],
-    },
-  },
-  Thumbs: {
-    showOnStart: false,
-  },
-  Carousel: {
-    showOnStart: false,
-  },
-});
-
 const mainEventCounters = document.querySelectorAll('.main-event__slide-start-counter');
 
 mainEventCounters.forEach((counter) => {
