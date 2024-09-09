@@ -6,14 +6,13 @@
     user-select: none;
 
     &-link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: block;
 
       &-image {
         display: block;
-        max-width: 100%;
-        height: auto;
+        width: 329px;
+        height: 436px;
+        border: none;
       }
     }
   }

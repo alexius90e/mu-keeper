@@ -24,7 +24,7 @@ body {
   margin: 0;
   overflow: hidden;
   color: #ffffff;
-  background: url(../assets/main-banner-min.webp) top center no-repeat;
+  background: url(../assets/main-banner-min.jpg) top center no-repeat;
   background-size: 1920px;
   background-color: #0d0d10;
 }
@@ -211,14 +211,13 @@ img {
           user-select: none;
 }
 .header__logo-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 .header__logo-link-image {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 329px;
+  height: 436px;
+  border: none;
 }
 
 .main {
@@ -226,24 +225,23 @@ img {
   margin-bottom: 166px;
   box-sizing: border-box;
   border-radius: 20px;
+  background-color: #0d0d10;
 }
-.main::before, .main::after {
-  content: "";
+.main__left, .main__right {
   position: absolute;
-  top: 100px;
+  top: 0;
   bottom: 0;
   z-index: -1;
   display: block;
   width: 145px;
-  background: url(../assets/main-shadow-min.webp) top left repeat-y;
-  filter: blur(3px);
 }
-.main::before {
+.main__left {
   left: -145px;
+  background: url(../assets/main-shadow-min.png) top left repeat-y;
 }
-.main::after {
+.main__right {
   right: -145px;
-  transform: scale(-1, 1);
+  background: url(../assets/main-shadow-right-min.png) top left repeat-y;
 }
 .main__top, .main__bottom {
   position: absolute;
@@ -256,25 +254,25 @@ img {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  background: url(../assets/main-border-min.webp) center/1290px no-repeat;
+  background-size: 1290px;
 }
 .main__top {
   top: -10px;
+  background: url(../assets/main-border-min.png) center no-repeat;
 }
 .main__bottom {
   bottom: -10px;
-  transform: scale(1, -1);
+  background: url(../assets/main-border-bottom-min.png) center no-repeat;
 }
 .main__wrapper {
   position: relative;
   z-index: 5;
-  display: flex;
-  align-items: stretch;
-  gap: 70px;
-  height: 100%;
+  width: 100%;
   padding: 0 70px;
+  box-sizing: border-box;
+  border: 0px solid #ffffff;
 }
-.main__wrapper::before, .main__wrapper::after {
+.main__wrapper-left, .main__wrapper-right {
   content: "";
   position: absolute;
   z-index: 1;
@@ -283,40 +281,39 @@ img {
   display: block;
   width: 70px;
   box-sizing: border-box;
-  background: url(../assets/divider-min.webp) top center repeat-y;
 }
-.main__wrapper::before {
+.main__wrapper-left {
   left: 0;
+  background: url(../assets/divider-left-min.jpg) top center repeat-y;
 }
-.main__wrapper::after {
+.main__wrapper-right {
   right: 0;
-  transform: scale(-1, 1);
+  background: url(../assets/divider-right-min.jpg) top center repeat-y;
 }
 .main__content {
   position: relative;
-  flex: 1 1 auto;
-  padding: 55px 0 96px;
-  background: url(../assets/main-content-bg-min.webp) top center no-repeat;
-  background-size: cover;
-}
-.main__content::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: -70px;
-  bottom: 0;
-  display: block;
-  width: 70px;
+  width: 740px;
+  min-height: 100%;
+  padding: 55px 30px 96px;
   box-sizing: border-box;
-  background: url(../assets/divider-min.webp) top center repeat-y;
+  vertical-align: top;
+  background: url(../assets/main-content-bg-min.jpg) top center no-repeat;
+  background-size: cover;
+  border: 0px solid #ffffff;
+}
+.main__divider {
+  padding: 0;
+  width: 70px;
+  border: 0px solid #ffffff;
+  background: url(../assets/divider-left-min.jpg) top center repeat-y;
 }
 .main__sidebar {
-  flex: 0 0 330px;
+  width: 330px;
   padding: 80px 30px 96px;
   box-sizing: border-box;
-  background: url(../assets/sidebar-bg-min.webp) top center repeat-y;
-  background-color: #c3a684;
+  background: url(../assets/sidebar-bg-min.jpg) top center repeat-y;
+  border: none;
+  vertical-align: top;
 }
 
 .sidebar > * {
@@ -622,6 +619,7 @@ img {
   padding-bottom: 58px;
   background: url(../assets/main-event-bg-min.webp) bottom center no-repeat;
   background-size: 740px;
+  display: none;
 }
 .main-event__content {
   min-width: 0;
@@ -849,6 +847,7 @@ img {
 
 .screenshots {
   margin: 0 0 30px;
+  display: none;
 }
 .screenshots__content {
   position: relative;
