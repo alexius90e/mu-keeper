@@ -29,3 +29,28 @@ const mainEventSwiper = new Swiper('.main-event .swiper', {
     prevEl: '.main-event__controls-next',
   },
 });
+
+const screenshotsSwiper = new Swiper('.screenshots .swiper', {
+  slidesPerView: 4,
+  spaceBetween: 14,
+  navigation: {
+    nextEl: '.screenshots__controls-prev',
+    prevEl: '.screenshots__controls-next',
+  },
+});
+
+Fancybox.bind('[data-fancybox="screenshots"]', {
+  Toolbar: {
+    display: {
+      left: [],
+      middle: [],
+      right: [],
+    },
+  },
+  Thumbs: {
+    showOnStart: false,
+  },
+  Carousel: {
+    showOnStart: false,
+  },
+});

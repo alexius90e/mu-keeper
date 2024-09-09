@@ -86,7 +86,8 @@
     position: relative;
     flex: 1 1 auto;
     padding: 55px 0 96px;
-    background: url(../assets/main-content-bg-min.webp) top center repeat-y;
+    background: url(../assets/main-content-bg-min.webp) top center no-repeat;
+    background-size: cover;
 
     &::after {
       content: '';
