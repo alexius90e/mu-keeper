@@ -1,3 +1,5 @@
+import './custom-select.js';
+
 const sidebarAccordeonElems = document.querySelectorAll('.sidebar__server-card');
 
 sidebarAccordeonElems.forEach((accordeon) => {

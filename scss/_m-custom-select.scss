@@ -1,0 +1,122 @@
+.custom-select {
+  position: relative;
+  margin: 0;
+  padding: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: url(../assets/sidebar-item-bg-min.webp) top center repeat;
+
+  & > select {
+    display: none;
+  }
+
+  &__selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    color: #c3a684;
+    border: none;
+    background-color: #211412;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+
+    &-text {
+      display: inline-block;
+      text-overflow: ellipsis;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      background: url(../assets/dropdown-grey.svg) center no-repeat;
+      background-size: 12px;
+      transform: rotate(180deg);
+      transition: all ease-in-out 0.1s;
+
+    }
+
+    &.active::after {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__hide {
+    display: none !important;
+  }
+
+  &__items {
+    position: absolute;
+    top: calc(100% - 3px);
+    right: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    padding: 4px 13px;
+    max-height: 240px;
+    min-width: max-content;
+    overflow-y: auto;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    background: url(../assets/sidebar-item-bg-min.webp) top center repeat;
+    box-shadow: 0 0 20px rgba($color: $black, $alpha: 0.25);
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba($color: $white, $alpha: 0.2);
+      border-radius: 4px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 2px;
+      right: 2px;
+      bottom: 2px;
+      background-color: #211412;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 11px 15px;
+    user-select: none;
+    cursor: pointer;
+    background: url(../assets/custom-select-divider-min.webp) bottom center repeat-x;
+
+    &:last-child {
+      background: none;
+    }
+  }
+
+  &__same-as-selected {
+    font-weight: 700;
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 98;
+  }
+}
